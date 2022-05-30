@@ -5,7 +5,7 @@
     "frontend:build": "cd udagram-frontend && npm run build",
     "backend:build": "cd udagram-api && npm run build",
     "frontend:test":"cd udagram-api && npm run test",
-    "frontend:e2e":"cd udagram-api && npm run e2e",
+    "frontend:e2e":"cd udagram-api && npm run e2e"
   },
   "devDependencies": {
     "@angular/cli": "~8.3.25"
