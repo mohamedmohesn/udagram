@@ -6,6 +6,6 @@
     "backend:build": "cd udagram-api && npm run build"
   },
   "devDependencies": {
-  @angular/cli
+    @angular/cli
   }
 }
