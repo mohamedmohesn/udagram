@@ -1,7 +1,20 @@
 # Udagram
+ The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
 
-This application is provided to you as an alternative starter project if you do not wish to host your own code done in the previous courses of this nanodegree. The udagram application is a fairly simple application that includes all the major components of a Full-Stack web application.
+## EB link
+- http://Udagram-env.eba-chmbcx7d.us-east-1.elasticbeanstalk.com
+## S3 link
+- http://myrandombucket123.s3-website-us-east-1.amazonaws.com
 
+## Infrastructure description
+```
+Udagram
+- node.js use for backend Elastic Beanstalk for hostings it
+- Angular use for frontend S3 for hostings it
+- A RDS database running Postgres
+- USE MVC 
+
+```
 ## Getting Started
 
 1. Clone this repo locally into the location of your choice.
@@ -9,20 +22,20 @@ This application is provided to you as an alternative starter project if you do 
 1. Open a terminal and navigate to the root of the repo
 1. follow the instructions in the installation step
 
-The project can run but is missing some information to connect to the database and storage service. These will be setup during the course of the project
-
-### Dependencies
+### App dependencies
 
 ```
-- Node v14.15.1 (LTS) or more recent. While older versions can work it is advisable to keep node to latest LTS version
+- Node v14.15.1 (LTS) or more recent. 
 
-- npm 6.14.8 (LTS) or more recent, Yarn can work but was not tested for this project
+- npm 6.14.8 (LTS) or more recent
 
-- AWS CLI v2, v1 can work but was not tested for this project
+- AWS CLI v2
 
 - A RDS database running Postgres.
 
-- A S3 bucket for hosting uploaded pictures.
+- Elastic Beanstalk for hostings the server
+
+- A S3 bucket for hostings frontend
 
 ```
 
@@ -59,7 +72,16 @@ The e2e tests are using Protractor and Jasmine.
 - [Angular](https://angular.io/) - Single Page Application Framework
 - [Node](https://nodejs.org) - Javascript Runtime
 - [Express](https://expressjs.com/) - Javascript API Framework
-
+  
+## Pipeline process
+ 1. backend install
+ 1. frontend install
+ 1. backend build
+ 1. frontend build
+ 1. frontend test
+ 1. frontend deploy
+ 1. backend deploy
+  
 ## License
 
 [License](LICENSE.txt)
