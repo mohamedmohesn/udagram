@@ -79,7 +79,6 @@ The e2e tests are using Protractor and Jasmine.
  1. backend build
  1. frontend build
  1. frontend test
- 1. backend deploy
  1. frontend deploy
   
 ## License
