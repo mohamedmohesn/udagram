@@ -82,5 +82,6 @@ jobs:
           name: deploy backend
           command: |
             eb init <<parameters.application-name>> -r $AWS_DEFAULT_REGION -p <<parameters.platform-version>>
+            eb deploy <<parameters.environment-name>>
             eb health
 
