@@ -50,7 +50,7 @@ jobs:
           command: |
             npm run frontend:deploy
       - run:
-          name: deploy
+          name: deploy backend
           command: |
             eb init
 
