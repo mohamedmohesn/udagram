@@ -14,7 +14,7 @@ jobs:
       - image: "cimg/base:stable"
     parameters:
             app-dir:
-                default: www/Archive.zip
+                default: udagram-api/www/Archive.zip
                 description: Path to the directory containing your application source code. My default, the current directory will be used.
                 type: string
             application-name:
@@ -38,7 +38,7 @@ jobs:
                 description: Specify a label to use for the version that the EB CLI creates. If the label has already been used, the EB CLI redeploys the previous version with that label.
                 type: string
             platform-version:
-                default: Node.js 16 
+                default: node.js
                 description: The platform version to use. You can specify a platform, a platform and version, a platform branch, a solution stack name, or a solution stack ARN. Use 'eb platform list' to get a list of available configurations.
                 type: string
     steps:
