@@ -6,15 +6,6 @@
 ## S3 link
 - http://myrandombucket123.s3-website-us-east-1.amazonaws.com
 
-## Infrastructure description
-```
-Udagram
-- node.js use for backend Elastic Beanstalk for hostings it
-- Angular use for frontend S3 for hostings it
-- A RDS database running Postgres
-- USE MVC 
-
-```
 ## Getting Started
 
 1. Clone this repo locally into the location of your choice.
@@ -22,7 +13,7 @@ Udagram
 1. Open a terminal and navigate to the root of the repo
 1. follow the instructions in the installation step
 
-### App dependencies
+### dependencies
 
 ```
 - Node v14.15.1 (LTS) or more recent. 
@@ -72,14 +63,6 @@ The e2e tests are using Protractor and Jasmine.
 - [Angular](https://angular.io/) - Single Page Application Framework
 - [Node](https://nodejs.org) - Javascript Runtime
 - [Express](https://expressjs.com/) - Javascript API Framework
-  
-## Pipeline process
- 1. backend install
- 1. frontend install
- 1. backend build
- 1. frontend build
- 1. frontend test
- 1. frontend deploy
   
 ## License
 
