@@ -12,6 +12,35 @@ jobs:
   build:
     docker:
       - image: "cimg/base:stable"
+    parameters:
+            app-dir:
+                default: ./www/Archive.zip
+                description: Path to the directory containing your application source code. My default, the current directory will be used.
+                type: string
+            application-name:
+                default: "udagram"
+                description: The name of the application (used during `eb init`).
+                type: string
+            description:
+                default: ""
+                description: The description for the application version, enclosed in double quotation marks.
+                type: string
+            environment-name:
+                default: "udagram-env"
+                description: The name of the existing environment (created with `eb create`) to update.
+                type: string
+            image:
+                default: cimg/base:stable
+                description: Enter a custom docker image for this job. By default CircleCI's optimized `cimg/base` image will be used.
+                type: string
+            label:
+                default: ""
+                description: Specify a label to use for the version that the EB CLI creates. If the label has already been used, the EB CLI redeploys the previous version with that label.
+                type: string
+            platform-version:
+                default: node.js
+                description: The platform version to use. You can specify a platform, a platform and version, a platform branch, a solution stack name, or a solution stack ARN. Use 'eb platform list' to get a list of available configurations.
+                type: string
     steps:
       - node/install 
       - checkout
@@ -52,5 +81,5 @@ jobs:
       - run:
           name: deploy backend
           command: |
-            eb init udagram -r $AWS_DEFAULT_REGION -p
+            eb init <<parameters.application-name>> -r $AWS_DEFAULT_REGION -p <<parameters.platform-version>>
 
