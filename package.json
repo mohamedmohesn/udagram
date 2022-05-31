@@ -1,5 +1,8 @@
 {
-  "engines": { "node" : ">=10 <18" },
+    "engines" : { 
+    "npm" : ">=7.0.0",
+    "node" : ">=16.0.0"
+  },
   "scripts": {
     "frontend:install": "cd udagram-frontend && npm install",
     "backend:install": "cd udagram-api && npm install",
