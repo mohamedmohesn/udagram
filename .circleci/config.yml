@@ -14,7 +14,7 @@ jobs:
       - image: "cimg/base:stable"
     parameters:
             app-dir:
-                default: ./www/Archive.zip
+                default: www/Archive.zip
                 description: Path to the directory containing your application source code. My default, the current directory will be used.
                 type: string
             application-name:
